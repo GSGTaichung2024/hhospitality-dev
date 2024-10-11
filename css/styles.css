@@ -12796,10 +12796,6 @@ body {
   background-color: #000;
 }
 
-#mainNav :active {
-  background-color: #000;
-}
-
 #mainNav .navbar-toggler {
   font-size: 16px;
   padding: 0.75rem;
