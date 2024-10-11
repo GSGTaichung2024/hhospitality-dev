@@ -146,5 +146,59 @@
   "common": {
     "previous": "上一頁",
     "next": "下一頁"
+  },
+  "investing": {
+    "title": "我們的投資",
+    "subtitle": "探索我們多元化的策略投資組合"
+  },
+  "restaurant": {
+    "3BrosFalafel": {
+      "name": "3 Bros Falafel",
+      "description": "一家充滿活力的餐廳，專門提供墨西哥風格的捲餅，在愛妮島提供獨特的風味融合。"
+    },
+    "verDeElNido": {
+      "name": "Ver De El Nido",
+      "description": "一家迷人的素食餐廳，在愛妮島中心提供多樣化的植物性菜單。"
+    }
+  },
+  "travel": {
+    "elNidoGO": {
+      "name": "El Nido GO",
+      "description": "一個令人興奮的海灘遊戲體驗，為愛妮島的遊客提供有趣的活動和冒險。"
+    },
+    "sunsetMarket": {
+      "name": "日落市集",
+      "description": "一個熱鬧的海濱市集，提供購物和用餐體驗，伴隨著令人驚嘆的日落美景。"
+    },
+    "nacpanBeachWedding": {
+      "name": "納克潘海灘婚禮",
+      "description": "提供海灘婚禮服務，包括場地信息、餐飲和裝飾協助，為您打造完美的海灘婚禮。"
+    },
+    "nacpanBeachShuttle": {
+      "name": "納克潘海灘接駁車",
+      "description": "這是一輛9座小巴，可以帶您遊覽菲律賓愛妮島的海岸風光和城市景點。這是探索島上美麗海灘和地標的完美方式，同時享受舒適的交通。"
+    }
+  },
+  "cafe": {
+    "grounded100Arabica": {
+      "name": "Grounded 100% 阿拉比卡",
+      "description": "一家舒適的咖啡館，提供優質的100%阿拉比卡咖啡，源自世界各地最優質的咖啡豆。享受完美的一杯咖啡，搭配新鮮烘焙的糕點，欣賞愛妮島的迷人景色。"
+    },
+    "unocha": {
+      "name": "Unocha",
+      "description": "Unocha：愛妮島的正宗台灣珍珠奶茶。經典和創新口味，使用優質茶葉和新鮮珍珠。在天堂中品嚐台灣風味。"
+    }
+  },
+  "spa": {
+    "orientalSpa": {
+      "name": "東方水療",
+      "description": "東方水療為您提供一個寧靜的放鬆和恢復活力的綠洲，位於愛妮島的中心。我們的專業治療師提供一系列傳統和現代的療程，從舒緩按摩到煥膚面部護理，使用天然的當地原料。體驗極致的寧靜，煥然一新，準備繼續您的熱帶天堂冒險。"
+    }
+  },
+  "bar": {
+    "sunmaiNacpanBeach": {
+      "name": "金色三麥納克潘海灘",
+      "description": "金色三麥納克潘海灘是愛妮島上唯一的金色三麥酒吧，提供獨特的台灣精釀啤酒和令人驚嘆的海灘景色。在這個熱帶天堂享受日落飲品，體驗東亞釀酒與菲律賓海岸美景的完美結合。"
+    }
   }
 }

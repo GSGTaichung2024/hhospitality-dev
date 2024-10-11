@@ -147,5 +147,59 @@
   "common": {
     "previous": "Previous",
     "next": "Next"
+  },
+  "investing": {
+    "title": "Our Investments",
+    "subtitle": "Explore our diverse strategic portfolio"
+  },
+  "restaurant": {
+    "3BrosFalafel": {
+      "name": "3 Bros Falafel",
+      "description": "A vibrant restaurant specializing in Mexican-style burritos, offering a unique fusion of flavors in El Nido."
+    },
+    "verDeElNido": {
+      "name": "Ver De El Nido",
+      "description": "A charming vegetarian restaurant offering a diverse plant-based menu in the heart of El Nido."
+    }
+  },
+  "travel": {
+    "elNidoGO": {
+      "name": "El Nido GO",
+      "description": "An exciting beach game experience offering fun activities and adventures for visitors to El Nido."
+    },
+    "sunsetMarket": {
+      "name": "Sunset Market",
+      "description": "A lively beachfront market offering shopping and dining experiences accompanied by stunning sunset views."
+    },
+    "nacpanBeachWedding": {
+      "name": "Nacpan Beach Wedding",
+      "description": "Offering beach wedding services including venue information, catering, and decoration assistance to create your perfect beach wedding."
+    },
+    "nacpanBeachShuttle": {
+      "name": "Nacpan Beach Shuttle",
+      "description": "This is a 9-seater minibus that can take you on a tour of the coastal scenery and city attractions of El Nido, Philippines. It's a perfect way to explore the beautiful beaches and landmarks of the island while enjoying comfortable transportation."
+    }
+  },
+  "cafe": {
+    "grounded100Arabica": {
+      "name": "Grounded 100% Arabica",
+      "description": "A cozy cafe offering premium 100% Arabica coffee sourced from the world's finest coffee beans. Enjoy the perfect cup paired with freshly baked pastries while taking in the captivating views of El Nido."
+    },
+    "unocha": {
+      "name": "Unocha",
+      "description": "Unocha: Authentic Taiwanese bubble tea in El Nido. Classic and innovative flavors using premium tea leaves and fresh pearls. Taste Taiwan in paradise."
+    }
+  },
+  "spa": {
+    "orientalSpa": {
+      "name": "Oriental Spa",
+      "description": "Oriental Spa offers a serene oasis of relaxation and rejuvenation in the heart of El Nido. Our expert therapists provide a range of traditional and modern treatments, from soothing massages to revitalizing facials, using natural, locally-sourced ingredients. Experience ultimate tranquility and emerge refreshed, ready to continue your tropical paradise adventure."
+    }
+  },
+  "bar": {
+    "sunmaiNacpanBeach": {
+      "name": "Sunmai Nacpan Beach",
+      "description": "Sunmai Nacpan Beach, the only Sunmai bar on El Nido island, offers a unique blend of Taiwanese craft beers and stunning beach views. Enjoy sunset drinks in this tropical paradise, where East Asian brewing meets Philippine coastal beauty."
+    }
   }
 }
