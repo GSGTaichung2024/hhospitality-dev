@@ -66,5 +66,86 @@
     "locationValue": "PH,El Nido",
     "phone": "Phone",
     "whatsapp": "What's app"
+  },
+  "hotel": {
+    "title": "Our Hotels",
+    "subtitle": "Discover our collection of exceptional properties in El Nido",
+    "info": "Hotel Info",
+    "rating": "Rating:",
+    "location": "Location:",
+    "phone": "Phone:",
+    "website": "Website:",
+    "highlights": "Highlights:",
+    "coupleRating": "Couple rating:",
+    "distanceFromBeach": "Distance from beach:",
+    "valueForMoney": "Value for money:",
+    "locationScore": "Location score:",
+    "nearestAirport": "Nearest airport:",
+    "pieceLio": {
+      "name": "Piece Lio",
+      "description": "A luxurious beachfront resort offering stunning views of the ocean and world-class amenities.",
+      "location": "Lio Beach, El Nido, Palawan",
+      "phone": "+63 917 123 4567",
+      "website": "www.piecelio.com"
+    },
+    "nacpanBeachResort": {
+      "name": "Nacpan Beach Resort",
+      "description": "Experience the beauty of Nacpan Beach at this eco-friendly resort, perfect for nature lovers.",
+      "location": "Nacpan Beach, El Nido, Palawan",
+      "phone": "+63 917 234 5678",
+      "website": "www.nacpanbeachresort.com"
+    },
+    "nacpanBeachGlamping": {
+      "name": "Nacpan Beach Glamping",
+      "description": "Enjoy a unique glamping experience with all the comforts of a hotel, right on the beach.",
+      "location": "Nacpan Beach, El Nido, Palawan",
+      "phone": "+63 917 345 6789",
+      "website": "www.nacpanbeachglamping.com"
+    },
+    "hHotelVeganHotel": {
+      "name": "H Hotel Vegan Hotel",
+      "description": "A vegan-friendly hotel with plant-based cuisine and eco-conscious rooms.",
+      "location": "El Nido Town Proper, Palawan",
+      "phone": "+63 917 456 7890",
+      "website": "www.hhotelveganhotel.com"
+    },
+    "jBoutiqueHotel": {
+      "name": "J Boutique Hotel",
+      "description": "A stylish boutique hotel in the heart of El Nido, perfect for urban explorers.",
+      "location": "El Nido Town Center, Palawan",
+      "phone": "+63 917 567 8901",
+      "website": "www.jboutiquehotel.com"
+    },
+    "sResortElNido": {
+      "name": "S Resort El Nido",
+      "description": "A modern resort offering comfort and convenience for leisure and business travelers.",
+      "location": "Corong Corong, El Nido, Palawan",
+      "phone": "+63 917 678 9012",
+      "website": "www.sresortelnido.com"
+    },
+    "casaCecilia": {
+      "name": "Casa Cecilia",
+      "description": "A 3-star accommodation located in the heart of El Nido, offering comfort and convenience.",
+      "location": "El Nido, Palawan",
+      "phone": "+63 917 345 6789",
+      "website": "www.casacecilia.com"
+    },
+    "nacpanBeachVillas": {
+      "name": "Nacpan Beach Villas",
+      "description": "Luxurious villas with free WiFi, perfect for couples seeking a romantic getaway.",
+      "location": "Near Nacpan Beach, El Nido, Palawan",
+      "highlights": "Free WiFi, Garden, Terrace, Bar"
+    },
+    "milanGraceInn": {
+      "name": "MilanGrace Inn El Nido Palawan",
+      "description": "3-star accommodation with free parking, perfect location for exploring El Nido.",
+      "location": "Barangay Buena Suerte Cabigsing El Nido, Palawan, Philippines, 5113",
+      "highlights": "Free parking, Restaurant, 24-hour front desk, Airport transfer",
+      "nearestAirport": "El Nido Airport (ENI) - 4.1 km"
+    }
+  },
+  "common": {
+    "previous": "Previous",
+    "next": "Next"
   }
 }
