@@ -65,5 +65,86 @@
     "locationValue": "菲律宾,爱妮岛",
     "phone": "电话",
     "whatsapp": "WhatsApp"
+  },
+  "hotel": {
+    "title": "我们的酒店",
+    "subtitle": "探索我们在爱妮岛的卓越物业系列",
+    "info": "酒店信息",
+    "rating": "评分：",
+    "location": "位置：",
+    "phone": "电话：",
+    "website": "网站：",
+    "highlights": "亮点：",
+    "coupleRating": "情侣评分：",
+    "distanceFromBeach": "距离海滩：",
+    "valueForMoney": "性价比：",
+    "locationScore": "位置评分：",
+    "nearestAirport": "最近的机场：",
+    "pieceLio": {
+      "name": "Piece Lio",
+      "description": "豪华的海滨度假村，提供令人惊叹的海景和世界级设施。",
+      "location": "Lio Beach, El Nido, Palawan",
+      "phone": "+63 917 123 4567",
+      "website": "www.piecelio.com"
+    },
+    "nacpanBeachResort": {
+      "name": "Nacpan Beach Resort",
+      "description": "在这个生态友好的度假村体验纳克潘海滩的美丽，非常适合自然爱好者。",
+      "location": "Nacpan Beach, El Nido, Palawan",
+      "phone": "+63 917 234 5678",
+      "website": "www.nacpanbeachresort.com"
+    },
+    "nacpanBeachGlamping": {
+      "name": "Nacpan Beach Glamping",
+      "description": "享受独特的豪华露营体验，拥有酒店的所有舒适，就在海滩上。",
+      "location": "Nacpan Beach, El Nido, Palawan",
+      "phone": "+63 917 345 6789",
+      "website": "www.nacpanbeachglamping.com"
+    },
+    "hHotelVeganHotel": {
+      "name": "H Hotel Vegan Hotel",
+      "description": "一家素食友好的酒店，提供植物性美食和环保意识的客房。",
+      "location": "El Nido Town Proper, Palawan",
+      "phone": "+63 917 456 7890",
+      "website": "www.hhotelveganhotel.com"
+    },
+    "jBoutiqueHotel": {
+      "name": "J Boutique Hotel",
+      "description": "位于爱妮岛中心的时尚精品酒店，非常适合城市探险者。",
+      "location": "El Nido Town Center, Palawan",
+      "phone": "+63 917 567 8901",
+      "website": "www.jboutiquehotel.com"
+    },
+    "sResortElNido": {
+      "name": "S Resort El Nido",
+      "description": "为休闲和商务旅客提供舒适和便利的现代度假村。",
+      "location": "Corong Corong, El Nido, Palawan",
+      "phone": "+63 917 678 9012",
+      "website": "www.sresortelnido.com"
+    },
+    "casaCecilia": {
+      "name": "Casa Cecilia",
+      "description": "位于爱妮岛中心的三星级住宿，提供舒适和便利。",
+      "location": "El Nido, Palawan",
+      "phone": "+63 917 345 6789",
+      "website": "www.casacecilia.com"
+    },
+    "nacpanBeachVillas": {
+      "name": "Nacpan Beach Villas",
+      "description": "提供免费WiFi的豪华别墅，非常适合寻求浪漫度假的情侣。",
+      "location": "Near Nacpan Beach, El Nido, Palawan",
+      "highlights": "免费WiFi、花园、露台、酒吧"
+    },
+    "milanGraceInn": {
+      "name": "MilanGrace Inn El Nido Palawan",
+      "description": "提供免费停车的三星级住宿，探索爱妮岛的完美位置。",
+      "location": "菲律宾，巴拉望，爱妮岛，Barangay Buena Suerte Cabigsing，5113",
+      "highlights": "免费停车、餐厅、24小时前台、机场接送",
+      "nearestAirport": "El Nido Airport (ENI) - 4.1 km"
+    }
+  },
+  "common": {
+    "previous": "上一页",
+    "next": "下一页"
   }
 }
