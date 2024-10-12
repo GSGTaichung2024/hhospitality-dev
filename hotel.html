@@ -33,96 +33,15 @@
         }
     </style>
     
+    <!-- Load custom scripts -->
+    <script src="js/scripts.js"></script>
+
     <!-- i18next libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.10/i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/2.1.0/jquery-i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-xhr-backend/3.2.2/i18nextXHRBackend.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const langSelect = document.getElementById('langSelect');
-            const langSelectDesktop = document.getElementById('langSelectDesktop');
-
-            function detectLanguage() {
-                const browserLang = navigator.language || navigator.userLanguage;
-                if (browserLang.startsWith('zh')) {
-                    return browserLang.toLowerCase() === 'zh-tw' ? 'zh-tw' : 'zh-cn';
-                }
-                return 'en';
-            }
-
-            function setLanguage(lang) {
-                localStorage.setItem('userLanguage', lang);
-                i18next.changeLanguage(lang, (err, t) => {
-                    if (err) return console.log('something went wrong loading', err);
-                    updateContent();
-                    updateSelects(lang);
-                });
-            }
-
-            function handleLanguageChange(event) {
-                const selectedLang = event.target.value;
-                setLanguage(selectedLang);
-            }
-
-            function updateSelects(lang) {
-                langSelect.value = lang;
-                langSelectDesktop.value = lang;
-            }
-
-            langSelect.addEventListener('change', handleLanguageChange);
-            langSelectDesktop.addEventListener('change', handleLanguageChange);
-
-            i18next
-                .use(i18nextXHRBackend)
-                .use(i18nextBrowserLanguageDetector)
-                .init({
-                    fallbackLng: 'en',
-                    debug: true,
-                    backend: {
-                        loadPath: 'locales/{{lng}}/translation.json'
-                    }
-                }, function(err, t) {
-                    if (err) return console.log('something went wrong loading', err);
-                    const savedLang = localStorage.getItem('userLanguage') || detectLanguage();
-                    setLanguage(savedLang);
-                });
-
-            function updateContent() {
-                document.querySelectorAll('[data-i18n]').forEach(element => {
-                    const key = element.getAttribute('data-i18n');
-                    element.innerHTML = i18next.t(key);
-                });
-            }
-        });
-    </script>
-
-    <script>
-
-    document.addEventListener('DOMContentLoaded', function() {
-        let lastScrollTop = 0;
-        const navbar = document.getElementById('mainNav');
-        const scrollThreshold = 100; // Adjust this value to change when the navbar starts hiding
-
-        window.addEventListener('scroll', function() {
-            let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (currentScrollTop > lastScrollTop && currentScrollTop > scrollThreshold) {
-                // Scrolling down
-                navbar.style.transform = 'translateY(-100%)';
-                navbar.style.transition = 'transform 0.3s ease-out';
-            } else {
-                // Scrolling up or at the top
-                navbar.style.transform = 'translateY(0)';
-                navbar.style.transition = 'transform 0.3s ease-out';
-            }
-
-            lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
-        }, false);
-    });
-
-    </script>
 </head>
 
 <body id="page-top">
@@ -134,29 +53,32 @@
             <div class="d-flex align-items-center">
                 <div class="d-lg-none me-2">
                     <select id="langSelect" class="form-select bg-dark text-white"
-                        style="width: auto; padding-right: 20px;" aria-label="語言選擇">
+                        style="width: auto; padding-right: 20px;" aria-label="Language selection">
                         <option value="en">🇺🇸 English</option>
-                        <option value="zh-tw">🇹🇼 繁中</option>
+                        <option value="zh">🇹🇼 繁中</option>
                         <option value="zh-cn">🇨🇳 簡中</option>
                     </select>
                 </div>
                 <button class="navbar-toggler navbar-toggler-right ms-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="切換導航">
+                    aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="hotel.html" data-i18n="nav.hotel">Our Hotels</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#timeline" data-i18n="nav.timeline">Timeline</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#timeline"
+                            data-i18n="nav.timeline">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact"
+                            data-i18n="nav.contact">Contact</a></li>
                     <li class="nav-item d-none d-lg-block">
                         <select id="langSelectDesktop" class="langSelectDesktop form-select bg-dark text-white"
-                            aria-label="語言選擇">
+                            aria-label="Language selection">
                             <option value="en">🇺🇸 English</option>
-                            <option value="zh-tw">🇹🇼 繁中</option>
+                            <option value="zh">🇹🇼 繁中</option>
                             <option value="zh-cn">🇨🇳 簡中</option>
                         </select>
                     </li>
@@ -182,11 +104,18 @@
                         <img class="img-fluid mb-3 mb-lg-0" src="images/piecelio/cover.webp" alt="Piece Lio" />
                     </a>
                     <div class="featured-text text-center text-lg-left pt-3">
-                        <h4 data-i18n="hotel.pieceLio.name">Piece Lio</h4>
+                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#pieceLioModal" data-i18n="hotel.pieceLio.name">Piece Lio</a></h4>
                         <p class="text-black-50 mb-0">
                             <span data-i18n="hotel.pieceLio.description">A luxurious beachfront resort offering stunning views of the ocean and world-class amenities.</span>
-                            <span class="text-warning"><br>★★★★★ 4.9</span>
                         </p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div>
+                                <span data-i18n="hotel.rating">Rating</span>: <span class="text-warning">★★★★★</span><br>
+                                <span data-i18n="hotel.pricing">Pricing</span>: <span class="text-warning">★★★★★</span><br>
+                                <span data-i18n="hotel.location">Location</span>: <span class="text-warning">★★★★★</span>
+                            </div>
+                            <a href="https://hotels.cloudbeds.com/reservation/lqMNR1" target="_blank" class="btn btn-primary" data-i18n="hotel.bookNow">Book Now</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
@@ -195,11 +124,18 @@
                             alt="Nacpan Beach Resort" />
                     </a>
                     <div class="featured-text text-center text-lg-left pt-3">
-                        <h4 data-i18n="hotel.nacpanBeachResort.name">Nacpan Beach Resort</h4>
+                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#nacpanBeachResortModal" data-i18n="hotel.nacpanBeachResort.name">Nacpan Beach Resort</a></h4>
                         <p class="text-black-50 mb-0">
                             <span data-i18n="hotel.nacpanBeachResort.description">Experience the beauty of Nacpan Beach at this eco-friendly resort, perfect for nature lovers.</span>
-                            <span class="text-warning"><br>★★★★★ 4.7</span>
                         </p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div>
+                                <span data-i18n="hotel.rating">Rating</span>: <span class="text-warning">★★★★</span><br>
+                                <span data-i18n="hotel.pricing">Pricing</span>: <span class="text-warning">★★★★</span><br>
+                                <span data-i18n="hotel.location">Location</span>: <span class="text-warning">★★★★★</span>
+                            </div>
+                            <a href="https://hotels.cloudbeds.com/reservation/Rl4kvW" target="_blank" class="btn btn-primary" data-i18n="hotel.bookNow">Book Now</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
@@ -208,11 +144,18 @@
                             alt="Nacpan Beach Glamping" />
                     </a>
                     <div class="featured-text text-center text-lg-left pt-3">
-                        <h4 data-i18n="hotel.nacpanBeachGlamping.name">Nacpan Beach Glamping</h4>
+                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#nacpanBeachGlampingModal" data-i18n="hotel.nacpanBeachGlamping.name">Nacpan Beach Glamping</a></h4>
                         <p class="text-black-50 mb-0">
                             <span data-i18n="hotel.nacpanBeachGlamping.description">Enjoy a unique glamping experience with all the comforts of a hotel, right on the beach.</span>
-                            <span class="text-warning"><br>★★★★★ 4.8</span>
                         </p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div>
+                                <span data-i18n="hotel.rating">Rating</span>: <span class="text-warning">★★★★</span><br>
+                                <span data-i18n="hotel.pricing">Pricing</span>: <span class="text-warning">★★★★</span><br>
+                                <span data-i18n="hotel.location">Location</span>: <span class="text-warning">★★★★★</span>
+                            </div>
+                            <a href="https://hotels.cloudbeds.com/en/reservation/FuKvEZ" target="_blank" class="btn btn-primary" data-i18n="hotel.bookNow">Book Now</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
@@ -221,11 +164,18 @@
                             alt="H Hotel Vegan Hotel" />
                     </a>
                     <div class="featured-text text-center text-lg-left pt-3">
-                        <h4 data-i18n="hotel.hHotelVeganHotel.name">H Hotel Vegan Hotel</h4>
+                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#hHotelVeganHotelModal" data-i18n="hotel.hHotelVeganHotel.name">H Hotel Vegan Friendly Hotel</a></h4>
                         <p class="text-black-50 mb-0">
                             <span data-i18n="hotel.hHotelVeganHotel.description">A vegan-friendly hotel with plant-based cuisine and eco-conscious rooms.</span>
-                            <span class="text-warning"><br>★★★★★ 4.6</span>
                         </p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div>
+                                <span data-i18n="hotel.rating">Rating</span>: <span class="text-warning">★★★★★</span><br>
+                                <span data-i18n="hotel.pricing">Pricing</span>: <span class="text-warning">★★★★</span><br>
+                                <span data-i18n="hotel.location">Location</span>: <span class="text-warning">★★★★★</span>
+                            </div>
+                            <a href="https://hotels.cloudbeds.com/reservation/E2QFKh" target="_blank" class="btn btn-primary" data-i18n="hotel.bookNow">Book Now</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
@@ -233,11 +183,18 @@
                         <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-J-Hostel.jpg" alt="J Boutique Hotel" />
                     </a>
                     <div class="featured-text text-center text-lg-left pt-3">
-                        <h4 data-i18n="hotel.jBoutiqueHotel.name">J Boutique Hotel</h4>
+                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#jBoutiqueHotelModal" data-i18n="hotel.jBoutiqueHotel.name">J Boutique Hotel</a></h4>
                         <p class="text-black-50 mb-0">
                             <span data-i18n="hotel.jBoutiqueHotel.description">A stylish boutique hotel in the heart of El Nido, perfect for urban explorers.</span>
-                            <span class="text-warning"><br>★★★★★ 4.5</span>
                         </p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div>
+                                <span data-i18n="hotel.rating">Rating</span>: <span class="text-warning">★★★★</span><br>
+                                <span data-i18n="hotel.pricing">Pricing</span>: <span class="text-warning">★★★</span><br>
+                                <span data-i18n="hotel.location">Location</span>: <span class="text-warning">★★★</span>
+                            </div>
+                            <a href="https://hotels.cloudbeds.com/reservation/sT18ih" target="_blank" class="btn btn-primary" data-i18n="hotel.bookNow">Book Now</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
@@ -246,11 +203,18 @@
                             alt="S Resort El Nido" />
                     </a>
                     <div class="featured-text text-center text-lg-left pt-3">
-                        <h4 data-i18n="hotel.sResortElNido.name">S Resort El Nido</h4>
+                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#sResortElNidoModal" data-i18n="hotel.sResortElNido.name">S Resort</a></h4>
                         <p class="text-black-50 mb-0">
                             <span data-i18n="hotel.sResortElNido.description">A modern resort offering comfort and convenience for leisure and business travelers.</span>
-                            <span class="text-warning"><br>★★★★★ 4.8</span>
                         </p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div>
+                                <span data-i18n="hotel.rating">Rating</span>: <span class="text-warning">★★★★</span><br>
+                                <span data-i18n="hotel.pricing">Pricing</span>: <span class="text-warning">★★★</span><br>
+                                <span data-i18n="hotel.location">Location</span>: <span class="text-warning">★★★★★</span>
+                            </div>
+                            <a href="https://hotels.cloudbeds.com/reservation/sT18ih" target="_blank" class="btn btn-primary" data-i18n="hotel.bookNow">Book Now</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
@@ -258,11 +222,18 @@
                         <img class="img-fluid mb-3 mb-lg-0" src="assets/img/casa/casa_1.jpg" alt="Casa Cecilia" />
                     </a>
                     <div class="featured-text text-center text-lg-left pt-3">
-                        <h4 data-i18n="hotel.casaCecilia.name">Casa Cecilia</h4>
+                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#casaCeciliaModal" data-i18n="hotel.casaCecilia.name">Casa Cecilia</a></h4>
                         <p class="text-black-50 mb-0">
                             <span data-i18n="hotel.casaCecilia.description">A 3-star accommodation located in the heart of El Nido, offering comfort and convenience.</span>
-                            <span class="text-warning"><br>★★★ 4.2</span>
                         </p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div>
+                                <span data-i18n="hotel.rating">Rating</span>: <span class="text-warning">★★★</span><br>
+                                <span data-i18n="hotel.pricing">Pricing</span>: <span class="text-warning">★★★</span><br>
+                                <span data-i18n="hotel.location">Location</span>: <span class="text-warning">★★★★</span>
+                            </div>
+                            <a href="https://www.facebook.com/CasaCeciliaHotel" target="_blank" class="btn btn-primary" data-i18n="hotel.bookNow">Book Now</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
@@ -270,25 +241,20 @@
                         <img class="img-fluid mb-3 mb-lg-0" src="images/nacpan_beach_villa/1.webp" alt="Nacpan Beach Villas" />
                     </a>
                     <div class="featured-text text-center text-lg-left pt-3">
-                        <h4 data-i18n="hotel.nacpanBeachVillas.name">Nacpan Beach Villas</h4>
+                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#nacpanBeachVillasModal" data-i18n="hotel.nacpanBeachVillas.name">Nacpan Beach Villas</a></h4>
                         <p class="text-black-50 mb-0">
                             <span data-i18n="hotel.nacpanBeachVillas.description">Luxurious villas with free WiFi, perfect for couples seeking a romantic getaway.</span>
-                            <span class="text-warning"><br>★★★★★ 4.7</span>
                         </p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div>
+                                <span data-i18n="hotel.rating">Rating</span>: <span class="text-warning">★★★★★</span><br>
+                                <span data-i18n="hotel.pricing">Pricing</span>: <span class="text-warning">★★★★</span><br>
+                                <span data-i18n="hotel.location">Location</span>: <span class="text-warning">★★★★★</span>
+                            </div>
+                            <a href="https://hotels.cloudbeds.com/reservation/JVnObH" target="_blank" class="btn btn-primary" data-i18n="hotel.bookNow">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#milanGraceInnModal">
-                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/milangrace/milangrace_1.jpg" alt="MilanGrace Inn El Nido Palawan" />
-                    </a>
-                    <div class="featured-text text-center text-lg-left pt-3">
-                        <h4 data-i18n="hotel.milanGraceInn.name">MilanGrace Inn El Nido Palawan</h4>
-                        <p class="text-black-50 mb-0">
-                            <span data-i18n="hotel.milanGraceInn.description">3-star accommodation with free parking, perfect location for exploring El Nido.</span>
-                            <span class="text-warning"><br>★★★ 3.0</span>
-                        </p>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -572,8 +538,8 @@
                                     <p class="card-text"><strong data-i18n="hotel.location">Location:</strong> <span data-i18n="hotel.casaCecilia.location">El Nido, Palawan</span></p>
                                     <p class="card-text"><strong data-i18n="hotel.phone">Phone:</strong> <span data-i18n="hotel.casaCecilia.phone">+63 917 345 6789</span></p>
                                     <p class="card-text"><strong data-i18n="hotel.website">Website:</strong> <a
-                                            href="https://www.casacecilia.com"
-                                            target="_blank" data-i18n="hotel.casaCecilia.website">www.casacecilia.com</a></p>
+                                            href="https://www.facebook.com/CasaCeciliaHotel"
+                                            target="_blank" data-i18n="hotel.casaCecilia.website">Facebook Page</a></p>
                                 </div>
                             </div>
                         </div>
@@ -767,8 +733,8 @@
                                     <p class="card-text"><strong data-i18n="hotel.location">Location:</strong> <span data-i18n="hotel.hHotelVeganHotel.location">El Nido Town Proper, Palawan</span></p>
                                     <p class="card-text"><strong data-i18n="hotel.phone">Phone:</strong> <span data-i18n="hotel.hHotelVeganHotel.phone">+63 917 456 7890</span></p>
                                     <p class="card-text"><strong data-i18n="hotel.website">Website:</strong> <a
-                                            href="https://www.hhotelveganhotel.com"
-                                            target="_blank" data-i18n="hotel.hHotelVeganHotel.website">www.hhotelveganhotel.com</a></p>
+                                            href="https://hhotelelnido.com/"
+                                            target="_blank" data-i18n="hotel.hHotelVeganHotel.website">hhotelelnido.com</a></p>
                                 </div>
                             </div>
                         </div>
@@ -874,8 +840,8 @@
                                     <p class="card-text"><strong data-i18n="hotel.location">Location:</strong> <span data-i18n="hotel.jBoutiqueHotel.location">El Nido Town Center, Palawan</span></p>
                                     <p class="card-text"><strong data-i18n="hotel.phone">Phone:</strong> <span data-i18n="hotel.jBoutiqueHotel.phone">+63 917 567 8901</span></p>
                                     <p class="card-text"><strong data-i18n="hotel.website">Website:</strong> <a
-                                            href="https://www.jboutiquehotel.com"
-                                            target="_blank" data-i18n="hotel.jBoutiqueHotel.website">www.jboutiquehotel.com</a></p>
+                                            href="https://jboutiquehotelelnido.com/"
+                                            target="_blank" data-i18n="hotel.jBoutiqueHotel.website">jboutiquehotelelnido.com</a></p>
                                 </div>
                             </div>
                         </div>
@@ -1055,6 +1021,9 @@
                                     <p class="card-text"><strong data-i18n="hotel.location">Location:</strong> <span data-i18n="hotel.nacpanBeachVillas.location">Near Nacpan Beach, El Nido, Palawan</span></p>
                                     <p class="card-text"><strong data-i18n="hotel.highlights">Highlights:</strong> <span data-i18n="hotel.nacpanBeachVillas.highlights">Free WiFi, Garden, Terrace, Bar</span></p>
                                     <p class="card-text"><strong data-i18n="hotel.coupleRating">Couple rating:</strong> 9.4</p>
+                                    <p class="card-text"><strong data-i18n="hotel.website">Website:</strong> <a
+                                        href="https://www.nacpanbeachvillas.com/"
+                                        target="_blank" data-i18n="hotel.casaCecilia.website">nacpanbeachvillas.com</a></p>
                                 </div>
                             </div>
                         </div>

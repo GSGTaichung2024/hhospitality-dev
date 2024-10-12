@@ -24,11 +24,11 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css?v=202408291428" rel="stylesheet" />
     <style>
-        #mainNav.navbar-shrink .langSelectDesktop{
+        #mainNav.navbar-shrink .langSelectDesktop {
             margin-top: 15px;
         }
 
-        #mainNav .langSelectDesktop{
+        #mainNav .langSelectDesktop {
             margin-top: 25px;
         }
     </style>
@@ -37,66 +37,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.10/i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/2.1.0/jquery-i18next.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-xhr-backend/3.2.2/i18nextXHRBackend.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const langSelect = document.getElementById('langSelect');
-            const langSelectDesktop = document.getElementById('langSelectDesktop');
-
-            function detectLanguage() {
-                const browserLang = navigator.language || navigator.userLanguage;
-                if (browserLang.startsWith('zh')) {
-                    return browserLang.toLowerCase() === 'zh-tw' ? 'zh-tw' : 'zh-cn';
-                }
-                return 'en';
-            }
-
-            function setLanguage(lang) {
-                localStorage.setItem('userLanguage', lang);
-                i18next.changeLanguage(lang, (err, t) => {
-                    if (err) return console.log('something went wrong loading', err);
-                    updateContent();
-                    updateSelects(lang);
-                });
-            }
-
-            function handleLanguageChange(event) {
-                const selectedLang = event.target.value;
-                setLanguage(selectedLang);
-            }
-
-            function updateSelects(lang) {
-                langSelect.value = lang;
-                langSelectDesktop.value = lang;
-            }
-
-            langSelect.addEventListener('change', handleLanguageChange);
-            langSelectDesktop.addEventListener('change', handleLanguageChange);
-
-            i18next
-                .use(i18nextXHRBackend)
-                .use(i18nextBrowserLanguageDetector)
-                .init({
-                    fallbackLng: 'en',
-                    debug: true,
-                    backend: {
-                        loadPath: 'locales/{{lng}}/translation.json'
-                    }
-                }, function(err, t) {
-                    if (err) return console.log('something went wrong loading', err);
-                    const savedLang = localStorage.getItem('userLanguage') || detectLanguage();
-                    setLanguage(savedLang);
-                });
-
-            function updateContent() {
-                document.querySelectorAll('[data-i18n]').forEach(element => {
-                    const key = element.getAttribute('data-i18n');
-                    element.innerHTML = i18next.t(key);
-                });
-            }
-        });
-    </script>
+    <!-- Load custom scripts -->
+    <script src="js/scripts.js"></script>
 
 </head>
 
@@ -111,7 +56,7 @@
                     <select id="langSelect" class="form-select bg-dark text-white"
                         style="width: auto; padding-right: 20px;" aria-label="Language selection">
                         <option value="en">🇺🇸 English</option>
-                        <option value="zh-tw">🇹🇼 繁中</option>
+                        <option value="zh">🇹🇼 繁中</option>
                         <option value="zh-cn">🇨🇳 簡中</option>
                     </select>
                 </div>
@@ -123,15 +68,18 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="hotel.html" data-i18n="nav.hotel">Our Hotels</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#timeline" data-i18n="nav.timeline">Timeline</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#timeline"
+                            data-i18n="nav.timeline">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact"
+                            data-i18n="nav.contact">Contact</a></li>
                     <li class="nav-item d-none d-lg-block">
                         <select id="langSelectDesktop" class="langSelectDesktop form-select bg-dark text-white"
                             aria-label="Language selection">
                             <option value="en">🇺🇸 English</option>
-                            <option value="zh-tw">🇹🇼 繁中</option>
+                            <option value="zh">🇹🇼 繁中</option>
                             <option value="zh-cn">🇨🇳 簡中</option>
                         </select>
                     </li>
@@ -145,7 +93,8 @@
             <div class="d-flex justify-content-center">
                 <div class="text-center">
                     <h1 class="mx-auto my-0 text-uppercase" data-i18n="masthead.title">H Hospitality Group</h1>
-                    <p class="text-white-50 mx-auto mt-2 mb-5" data-i18n="masthead.subtitle">An unmissable stay for your next vacation in paradise!</p>
+                    <p class="text-white-50 mx-auto mt-2 mb-5" data-i18n="masthead.subtitle">An unmissable stay for your
+                        next vacation in paradise!</p>
                 </div>
             </div>
         </div>
@@ -158,7 +107,8 @@
                 <div class="col-12 p-2 text-center">
                     <img class="img-fluid mb-3 mb-lg-5" src="assets/img/hhospitality.group-logo.png" width="180px"
                         alt="hhospitality.group" />
-                    <p data-i18n="about.description">H Hospitality Group, the brainchild of visionary entrepreneur Henry, is a burgeoning management
+                    <p data-i18n="about.description">H Hospitality Group, the brainchild of visionary entrepreneur
+                        Henry, is a burgeoning management
                         company setting benchmarks in El Nido, Palawan. Amid a region witnessing a staggering 700% rise
                         in tourism over the past seven years, the group not only influences this growth but also proudly
                         owns shuttle services, a tour agency, and multiple hotels, further solidifying its footprint in
@@ -299,6 +249,32 @@
 
                     google.maps.event.addDomListener(window, 'load', initMap);
                 </script>
+
+                <script>
+
+                    document.addEventListener('DOMContentLoaded', function () {
+                        let lastScrollTop = 0;
+                        const navbar = document.getElementById('mainNav');
+                        const scrollThreshold = 100; // Adjust this value to change when the navbar starts hiding
+
+                        window.addEventListener('scroll', function () {
+                            let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                            if (currentScrollTop > lastScrollTop && currentScrollTop > scrollThreshold) {
+                                // Scrolling down
+                                navbar.style.transform = 'translateY(-100%)';
+                                navbar.style.transition = 'transform 0.3s ease-out';
+                            } else {
+                                // Scrolling up or at the top
+                                navbar.style.transform = 'translateY(0)';
+                                navbar.style.transition = 'transform 0.3s ease-out';
+                            }
+
+                            lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+                        }, false);
+                    });
+
+                </script>
             </div>
         </div>
 
@@ -306,7 +282,7 @@
 
     <!-- timeline-->
     <section class="projects-section bg-light" id="timeline"
-        style="background: linear-gradient(to bottom, rgb(255 255 255 / 82%) 0%, rgb(255 255 255 / 89%) 0%),url(assets/img/wave.jpg);">
+        style="background: linear-gradient(to bottom, rgb(255 255 255 / 82%) 0%, rgb(255 255 255 / 89%) 0%),url(assets/img/wave.jpg); background-size: cover;">
         <div class="container px-4 px-lg-5 ">
             <!-- Featured timeline Row-->
             <div class="row gx-4 gx-lg-5 justify-content-center mb-4">
@@ -465,7 +441,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="card-text" data-i18n="timeline.2024.nacpanBeachVilla.name">Nacpan Beach Villa</p>
+                                    <p class="card-text" data-i18n="timeline.2024.nacpanBeachVilla.name">Nacpan Beach
+                                        Villa</p>
                                 </div>
                                 <div class="col-6 p-1">
                                     <!-- Image trigger modal -->
@@ -1554,7 +1531,8 @@
                     <img class="img-fluid mb-3 mb-lg-5" src="assets/img/hhospitality.group-logo.png" width="180px"
                         alt="hhospitality.group" />
                     <h2 class="mb-4" data-i18n="csr.title">CORPORATE SOCIAL RESPONSIBILITY BREAKTHROUGHS</h2>
-                    <p data-i18n="csr.description">At H Hospitality Group, our commitment goes beyond providing exceptional hospitality; it extends
+                    <p data-i18n="csr.description">At H Hospitality Group, our commitment goes beyond providing
+                        exceptional hospitality; it extends
                         to making a meaningful impact on both our community and the environment. Since our founding in
                         El Nido, Palawan, we have been steadfast in our commitment to creating a positive change through
                         a variety of initiatives that support people and protect the planet.</p>
@@ -1563,7 +1541,8 @@
             <div class="row gx-0 align-items-top mb-5">
                 <div class="col-lg-6 p-2">
                     <h3 data-i18n="csr.communitySupport.title">Community Support Network</h3>
-                    <p data-i18n="csr.communitySupport.description">With around 300 employees, H Hospitality Group is proud to contribute to the livelihood of around
+                    <p data-i18n="csr.communitySupport.description">With around 300 employees, H Hospitality Group is
+                        proud to contribute to the livelihood of around
                         300 families. More than 70% of our workforce are locals from El Nido, showcasing our genuine
                         passion for supporting the community by providing decent jobs with competitive pay and benefits.
                         We believe that offering stable job opportunities and a nurturing work environment is essential
@@ -1580,7 +1559,8 @@
                 </div>
                 <div class="col-lg-6 p-2">
                     <h3 data-i18n="csr.turtleConservation.title">Turtle Conservation Legacy</h3>
-                    <p data-i18n="csr.turtleConservation.description">Since 2016, H Hospitality Group has been a proud supporter of the Nacpan Turtle Hatchery. Through
+                    <p data-i18n="csr.turtleConservation.description">Since 2016, H Hospitality Group has been a proud
+                        supporter of the Nacpan Turtle Hatchery. Through
                         our contributions, over 45,000 sea turtles have been successfully rehabilitated and released
                         into the ocean, safeguarding the lives of these incredible creatures and preserving the delicate
                         marine ecosystem. Our efforts to protect and conserve wildlife reflect our deep respect for the
@@ -1598,13 +1578,15 @@
             <div class="row gx-0 align-items-top mb-5">
                 <div class="col-lg-6 p-2">
                     <h3 data-i18n="csr.brigadaEskwela.title">Empowerment Through Brigada Eskwela</h3>
-                    <p data-i18n="csr.brigadaEskwela.description1">We recognize the importance of education in building a brighter future for our community. H
+                    <p data-i18n="csr.brigadaEskwela.description1">We recognize the importance of education in building
+                        a brighter future for our community. H
                         Hospitality Group actively participates in the "Brigada Eskwela" program by donating essential
                         materials such as cement, hollow blocks, and paint, as well as providing employee manpower to
                         assist with cleaning, painting, and repairing school buildings. This year's beneficiaries
                         include Bucana National High School and Calitang Elementary School. Additionally, we plan to
                         adopt a school to ensure sustainability and continuous development.</p>
-                    <p data-i18n="csr.brigadaEskwela.description2">H Hospitality Group also supports various schools by offering on-the-job training opportunities
+                    <p data-i18n="csr.brigadaEskwela.description2">H Hospitality Group also supports various schools by
+                        offering on-the-job training opportunities
                         for students. Trainees are assigned to different properties within HHG, including roles in Food
                         & Beverage, housekeeping, front office, and even head office departments such as HR, Accounting,
                         and Purchasing.</p>
@@ -1619,12 +1601,14 @@
                 </div>
                 <div class="col-lg-6 p-2">
                     <h3 data-i18n="csr.communityEngagement.title">Excellence Through Community Engagement</h3>
-                    <p data-i18n="csr.communityEngagement.description1">H Hospitality Group proudly supports local sports as a way to strengthen teamwork, discipline,
+                    <p data-i18n="csr.communityEngagement.description1">H Hospitality Group proudly supports local
+                        sports as a way to strengthen teamwork, discipline,
                         and community spirit. Our basketball team, a symbol of our commitment to these values, achieved
                         a major milestone by winning the championship in 2023. This victory not only brought pride to
                         our organization but also inspired our community to strive for excellence both on and off the
                         court.</p>
-                    <p data-i18n="csr.communityEngagement.description2">This year, HHG will launch its own Glee Club to showcase singing talents and a Dance Club to
+                    <p data-i18n="csr.communityEngagement.description2">This year, HHG will launch its own Glee Club to
+                        showcase singing talents and a Dance Club to
                         highlight creativity through dances. These initiatives demonstrate that we excel not only in
                         hospitality but also in honing diverse talents. They promote work-life balance within the
                         community by offering our team members opportunities for artistic expression and personal
@@ -1641,7 +1625,8 @@
             </div>
             <div class="row gx-0 align-items-top">
                 <div class="col-12 p-2 text-center">
-                    <p data-i18n="csr.conclusion">At H Hospitality Group, we are dedicated to forging a sustainable future for our people,
+                    <p data-i18n="csr.conclusion">At H Hospitality Group, we are dedicated to forging a sustainable
+                        future for our people,
                         community, and the environment. Our CSR initiatives are a testament to our unwavering commitment
                         to making a positive difference in El Nido and beyond, one step at a time.</p>
                 </div>
