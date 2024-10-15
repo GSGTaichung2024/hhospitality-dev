@@ -3,7 +3,8 @@
     "about": "关于我们",
     "hotel": "我们的酒店",
     "timeline": "时间轴",
-    "contact": "联系我们"
+    "contact": "联系我们",
+    "investing": "投资"
   },
   "masthead": {
     "title": "H Hospitality Group",
@@ -64,7 +65,10 @@
     "location": "地点",
     "locationValue": "菲律宾,爱妮岛",
     "phone": "电话",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "bussiness": "商业机会",
+    "office": "办公室",
+    "reservation": "预约电话"
   },
   "hotel": {
     "title": "我们的酒店",

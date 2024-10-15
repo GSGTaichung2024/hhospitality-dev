@@ -4,7 +4,8 @@
     "about": "About",
     "hotel": "Hotel",
     "timeline": "Timeline",
-    "contact": "Contact"
+    "contact": "Contact",
+    "investing": "Investing"
   },
   "masthead": {
     "title": "H Hospitality Group",
@@ -65,7 +66,10 @@
     "location": "Location",
     "locationValue": "PH,El Nido",
     "phone": "Phone",
-    "whatsapp": "What's app"
+    "whatsapp": "What's app",
+    "bussiness": "Business Opportunities",
+    "office": "Office",
+    "reservation": "Reservation"
   },
   "hotel": {
     "title": "Our Hotels",

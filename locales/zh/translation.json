@@ -3,7 +3,8 @@
     "about": "關於我們",
     "hotel": "我們的酒店",
     "timeline": "時間軸",
-    "contact": "聯繫我們"
+    "contact": "聯繫我們",
+    "investing": "投資"
   },
   "masthead": {
     "title": "H Hospitality Group",
@@ -64,7 +65,10 @@
     "location": "地點",
     "locationValue": "PH,El Nido",
     "phone": "電話",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "bussiness": "商業機會",
+    "office": "辦公室",
+    "reservation": "預約電話"
   },
   "hotel": {
     "title": "我們的酒店",
