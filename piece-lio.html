@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta property="og:title" content="Piece Lio - H Hospitality Group" />
+    <meta property="og:description"
+        content="Experience luxury and tranquility at Piece Lio, a world-class beachfront resort in El Nido, Palawan." />
+    <meta property="og:url" content="https://hhospitality.group/piece-lio.html" />
+    <meta property="og:site_name" content="H Hospitality Group" />
+    <meta property="og:image" content="https://hhospitality.group/assets/img/piece-lio-og-image.jpg" />
+    <meta name="format-detection" content="telephone=no">
+    <title>Piece Lio - H Hospitality Group</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/favicon_io/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" href="assets/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="mask-icon" href="assets/favicon_io/android-chrome-512x512.png" color="#ffffff">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css?v=202408291428" rel="stylesheet" />
+    <style>
+        #mainNav.navbar-shrink .langSelectDesktop {
+            margin-top: 15px;
+        }
+
+        #mainNav .langSelectDesktop {
+            margin-top: 25px;
+        }
+
+        .piece-lio-banner {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("images/piecelio/cover.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            padding: 10rem 0;
+        }
+
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: #64a19d;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .piece-lio-banner {
+                padding: 5rem 0;
+            }
+
+            .carousel-item img {
+                height: 300px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+    <!-- i18next libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.10/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/2.1.0/jquery-i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-xhr-backend/3.2.2/i18nextXHRBackend.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+
+    <!-- Load custom scripts -->
+    <script src="js/scripts.js"></script>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html"> <img class="img-fluid mb-lg-0"
+                    src="assets/img/h_hotel_group_logo.svg" width="120px" alt="h_hotel_group" /></a>
+            <div class="d-flex align-items-center">
+                <div class="d-lg-none me-2">
+                    <select id="langSelect" class="form-select bg-dark text-white"
+                        style="width: auto; padding-right: 20px;" aria-label="Language selection">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="zh">🇹🇼 繁中</option>
+                        <option value="zh-cn">🇨🇳 簡中</option>
+                    </select>
+                </div>
+                <button class="navbar-toggler navbar-toggler-right ms-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="hotel.html" data-i18n="nav.hotel">Our Hotels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investing.html" data-i18n="nav.investing">Investing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#timeline"
+                            data-i18n="nav.timeline">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact"
+                            data-i18n="nav.contact">Contact</a></li>
+                    <li class="nav-item d-none d-lg-block">
+                        <select id="langSelectDesktop" class="langSelectDesktop form-select bg-dark text-white"
+                            aria-label="Language selection">
+                            <option value="en">🇺🇸 English</option>
+                            <option value="zh">🇹🇼 繁中</option>
+                            <option value="zh-cn">🇨🇳 簡中</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="piece-lio-banner">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <h1 class="text-white-50 mx-auto mt-2 mb-5">Welcome to Piece Lio</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Experience Luxury in Paradise</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Photo Carousel -->
+    <section class="projects-section bg-light" id="photos">
+        <div class="container px-4 px-lg-5">
+            <div id="pieceCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/piecelio/cover.webp" class="d-block w-100" alt="Piece Lio Exterior">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/piecelio/room.webp" class="d-block w-100" alt="Piece Lio Room">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/piecelio/pool.webp" class="d-block w-100" alt="Piece Lio Pool">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#pieceCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#pieceCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Overview -->
+    <section class="projects-section bg-light" id="overview">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center section-title">Hotel Overview</h2>
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="images/piecelio/overview.webp" alt="Piece Lio Overview" /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <p class="text-black-50 mb-0">
+                            Piece Lio offers luxurious accommodations with an outdoor pool, restaurant, and fitness center. Enjoy free Wi-Fi and in-room service. Our hotel provides numerous sightseeing and activity options, enhancing the mysterious atmosphere. We're proud to be recognized among the "World's 20 Most Beautiful Hotels" by Condé Nast Traveler, and CNN Travel has described us as "very expensive but worth the trip."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="projects-section bg-light" id="services">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center section-title">Our Services</h2>
+            <div class="row gx-0 mb-4 mb-lg-5">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shuttle-van feature-icon"></i>
+                            <h4 class="text-uppercase m-0">Free Airport Transfer</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50">Convenient airport transfers for our guests</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-concierge-bell feature-icon"></i>
+                            <h4 class="text-uppercase m-0">Concierge Service</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50">Assistance with restaurant and activity bookings</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-wifi feature-icon"></i>
+                            <h4 class="text-uppercase m-0">Free High-Speed Wi-Fi</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50">Stay connected throughout your stay</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Features -->
+    <section class="projects-section bg-light" id="features">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center section-title">Destination Features</h2>
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <p class="text-black-50 mb-0">
+                            PIECE LIO is surrounded by unique natural beauty, showcasing the best of nature. The hotel's interior is designed to blend seamlessly with Palawan's flora, creating a harmonious environment. Our modern Japanese Zen-inspired style complements the natural landscape, fostering a serene atmosphere where nature and architecture coexist in perfect harmony.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="images/piecelio/destination.webp" alt="Piece Lio Destination" /></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container px-4 px-lg-5">Copyright &copy; H Hospitality Group 2024</div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
