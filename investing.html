@@ -107,17 +107,13 @@
                         aria-selected="true">Beachfront Hotels</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="restaurants-tab" data-bs-toggle="tab" data-bs-target="#restaurants"
-                        type="button" role="tab" aria-controls="restaurants" aria-selected="false">Restaurants</button>
+                    <button class="nav-link" id="restaurants-cafe-bars-tab" data-bs-toggle="tab" data-bs-target="#restaurants-cafe-bars"
+                        type="button" role="tab" aria-controls="restaurants-cafe-bars" aria-selected="false">Restaurant, Cafe & Bars</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="travel-tour-tab" data-bs-toggle="tab" data-bs-target="#travel-tour"
                         type="button" role="tab" aria-controls="travel-tour" aria-selected="false">Travel and
                         Tour</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="cafe-tab" data-bs-toggle="tab" data-bs-target="#cafe" type="button"
-                        role="tab" aria-controls="cafe" aria-selected="false">Cafe</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="spa-massage-tab" data-bs-toggle="tab" data-bs-target="#spa-massage"
@@ -128,10 +124,6 @@
                     <button class="nav-link" id="nacpan-beach-shuttle-tab" data-bs-toggle="tab"
                         data-bs-target="#nacpan-beach-shuttle" type="button" role="tab"
                         aria-controls="nacpan-beach-shuttle" aria-selected="false">Nacpan Beach Shuttle</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="bar-tab" data-bs-toggle="tab" data-bs-target="#bar" type="button"
-                        role="tab" aria-controls="bar" aria-selected="false">Bar</button>
                 </li>
             </ul>
             <div class="tab-content mt-4" id="investmentTabsContent">
@@ -266,10 +258,10 @@
                         </div>
                     </section>
                 </div>
-                <div class="tab-pane fade" id="restaurants" role="tabpanel" aria-labelledby="restaurants-tab">
+                <div class="tab-pane fade" id="restaurants-cafe-bars" role="tabpanel" aria-labelledby="restaurants-cafe-bars-tab">
                     <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                        <!-- Hotel List -->
-                        <section class="projects-section bg-light pt-5" id="hotels">
+                        <!-- Restaurant, Cafe & Bars List -->
+                        <section class="projects-section bg-light pt-5" id="restaurants-cafe-bars">
                             <div class="container px-4 px-lg-5">
                                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                                     
@@ -295,6 +287,44 @@
                                             <h4 data-i18n="restaurant.verDeElNido.name">Ver De El Nido</h4>
                                             <p class="text-black-50 mb-0">
                                                 <span data-i18n="restaurant.verDeElNido.description">A charming vegetarian restaurant offering a diverse menu of plant-based dishes in the heart of El Nido.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                        <a href="#">
+                                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/g100a/g100a_3.jpg"
+                                                alt="Grounded 100% Arabica" />
+                                        </a>
+                                        <div class="featured-text text-center text-lg-left pt-3">
+                                            <h4 data-i18n="cafe.grounded100Arabica.name">Grounded 100% Arabica</h4>
+                                            <p class="text-black-50 mb-0">
+                                                <span data-i18n="cafe.grounded100Arabica.description">A cozy café offering premium 100% Arabica coffee, sourced from the finest beans around the world. Enjoy a perfect cup with freshly baked pastries and stunning El Nido views.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                        <a href="#">
+                                            <img class="img-fluid mb-3 mb-lg-0" src="images/unocha/1.webp"  style="max-height: 346px; object-fit: cover; width: 100%;"
+                                                alt="Unocha" />
+                                        </a>
+                                        <div class="featured-text text-center text-lg-left pt-3">
+                                            <h4 data-i18n="cafe.unocha.name">Unocha</h4>
+                                            <p class="text-black-50 mb-0">
+                                                <span data-i18n="cafe.unocha.description">Unocha: Authentic Taiwanese bubble tea in El Nido. Classic and innovative flavors with quality tea and fresh tapioca. Taste Taiwan in paradise.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                        <a href="#">
+                                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/snb/snb_1.jpg" alt="Sunmai Nacpan Beach" />
+                                        </a>
+                                        <div class="featured-text text-center text-lg-left pt-3">
+                                            <h4 data-i18n="bar.sunmaiNacpanBeach.name">Sunmai Nacpan Beach</h4>
+                                            <p class="text-black-50 mb-0">
+                                                <span data-i18n="bar.sunmaiNacpanBeach.description">Sunmai Nacpan Beach, the only Sunmai bar on El Nido island, offers a unique blend of Taiwanese craft beers and stunning beach views. Enjoy sunset drinks in this tropical paradise, where East Asian brewing meets Philippine coastal beauty.</span>
                                             </p>
                                         </div>
                                     </div>
@@ -348,42 +378,6 @@
                         
                     </div>
                 </div>
-                <div class="tab-pane fade" id="cafe" role="tabpanel" aria-labelledby="cafe-tab">
-                    <!-- Hotel List -->
-                    <section class="projects-section bg-light pt-5" id="hotels">
-                        <div class="container px-4 px-lg-5">
-                            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-
-                                <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                                    <a href="#">
-                                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/g100a/g100a_3.jpg"
-                                            alt="Piece Lio" />
-                                    </a>
-                                    <div class="featured-text text-center text-lg-left pt-3">
-                                        <h4 data-i18n="hotel.pieceLio.name">Grounded 100% Arabica</h4>
-                                        <p class="text-black-50 mb-0">
-                                            <span data-i18n="cafe.grounded100Arabica.description">A cozy café offering premium 100% Arabica coffee, sourced from the finest beans around the world. Enjoy a perfect cup with freshly baked pastries and stunning El Nido views.</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                                    <a href="#">
-                                        <img class="img-fluid mb-3 mb-lg-0" src="images/unocha/1.webp"  style="max-height: 346px; object-fit: cover; width: 100%;"
-                                            alt="Piece Lio" />
-                                    </a>
-                                    <div class="featured-text text-center text-lg-left pt-3">
-                                        <h4 data-i18n="hotel.pieceLio.name">Unocha</h4>
-                                        <p class="text-black-50 mb-0">
-                                            <span data-i18n="cafe.unocha.description">Unocha: Authentic Taiwanese bubble tea in El Nido. Classic and innovative flavors with quality tea and fresh tapioca. Taste Taiwan in paradise.</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
-                </div>
                 <div class="tab-pane fade" id="spa-massage" role="tabpanel" aria-labelledby="spa-massage-tab">
                     <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                         <div class="col-xl-8 col-lg-7">
@@ -416,23 +410,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="bar" role="tabpanel" aria-labelledby="bar-tab">
-                    <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                        <div class="col-xl-8 col-lg-7">
-                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/snb/snb_1.jpg" alt="Sunmai Nacpan Beach" />
-                        </div>
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="featured-text text-center text-lg-left">
-                                <h4 data-i18n="bar.sunmaiNacpanBeach.name">Sunmai Nacpan Beach</h4>
-                                <p class="text-black-50 mb-0">
-                                    <span data-i18n="bar.sunmaiNacpanBeach.description">Sunmai Nacpan Beach, the only Sunmai bar on El Nido island, offers a unique blend of Taiwanese craft beers and stunning beach views. Enjoy sunset drinks in this tropical paradise, where East Asian brewing meets Philippine coastal beauty.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
 
                 <!-- Add similar structures for other tab panes (hotel, travel-tour, condominium, etc.) -->
             </div>
