@@ -13331,9 +13331,13 @@ body {
   object-fit: cover;
 }
 
+.hotel-description{
+  display: inline-block;
+  height: 80px;
+}
+
 #investmentTabs{
   border-bottom: none;
-
 }
 
 #investmentTabs .nav-link {
