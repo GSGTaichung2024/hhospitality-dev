@@ -13336,6 +13336,11 @@ body {
   height: 80px;
 }
 
+.restaurant-description{
+  display: inline-block;
+  height: 100px;
+}
+
 #investmentTabs{
   border-bottom: none;
 }
