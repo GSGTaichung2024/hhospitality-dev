@@ -88,56 +88,64 @@
     "nearestAirport": "最近的机场：",
     "pieceLio": {
       "name": "Piece Lio",
-      "description": "豪华的海滨度假村，提供令人惊叹的海景和世界级设施。",
+      "description": "Piece Lio 是爱妮岛上最舒适的酒店之一，与日本知名的 Piece 集团合作开发。Piece 集团在日本经营 10 家酒店，而 Piece Lio 提供 50 至 150 平方米的房间，相较于当地一般酒店 18 至 22 平方米的房型，为旅客带来更宽敞舒适的住宿体验。",
+      "shortDescription": "豪华的海滨度假村，提供令人惊叹的海景和世界级设施。",
       "location": "Lio Beach, El Nido, Palawan",
       "phone": "+63 917 123 4567",
       "website": "www.piecelio.com"
     },
     "nacpanBeachResort": {
       "name": "Nacpan Beach Resort",
-      "description": "在这个生态友好的度假村体验纳克潘海滩的美丽，非常适合自然爱好者。",
+      "description": "为了给不想住在帐篷旅馆的旅客更多选择，Nacpan Beach Resort 提供了更舒适的沙滩住宿体验，让客人享受私人卫浴设施，避免住在帐篷中厕所分离的不便。",
+      "shortDescription": "在这个生态友好的度假村体验纳克潘海滩的美丽，非常适合自然爱好者。",
       "location": "Nacpan Beach, El Nido, Palawan",
       "phone": "+63 917 234 5678",
       "website": "www.nacpanbeachresort.com"
     },
     "nacpanBeachGlamping": {
       "name": "Nacpan Beach Glamping",
-      "description": "享受独特的豪华露营体验，拥有酒店的所有舒适，就在海滩上。",
+      "description": "Nacpan Beach 是旅客认为在 Big Lagoon 和 Small Lagoon 之外必访的景点之一。我们在这片沙滩上开设了 Nacpan Beach Glamping，并种植了 300 棵树和 4000 株灌木。我们致力于环境保育，不仅没有破坏自然环境，还建立了海龟保育项目。",
+      "shortDescription": "享受独特的豪华露营体验，拥有酒店的所有舒适，就在海滩上。",
       "location": "Nacpan Beach, El Nido, Palawan",
       "phone": "+63 917 345 6789",
       "website": "www.nacpanbeachglamping.com"
     },
     "hHotelVeganHotel": {
-      "name": "H Hotel Vegan Hotel",
-      "description": "一家素食友好的酒店，提供植物性美食和环保意识的客房。",
+      "name": "H Hotel - Vegan Friendly Hotel",
+      "description": "H Hotel 是位于 El Nido 镇中心的酒店，拥有极佳的地理位置。酒店提供 Ver De 的纯素早餐，并在屋顶的 Piece of Sky 餐厅享受海景晚餐。目前，TripAdvisor 上排名前 3 的餐厅中有 2 家位于 H Hotel。",
+      "shortDescription": "一家素食友好的酒店，提供植物性美食和环保意识的客房。",
       "location": "El Nido Town Proper, Palawan",
       "phone": "+63 917 456 7890",
       "website": "www.hhotelveganhotel.com"
     },
     "jBoutiqueHotel": {
       "name": "J Boutique Hotel",
-      "description": "位于爱妮岛中心的时尚精品酒店，非常适合城市探险者。",
+      "description": "J Boutique Hotel 位于 El Nido 镇的边缘，步行 8 分钟即可到达沙滩。这间酒店适合背包客和小团体入住，提供经济实惠的价格，同时保有舒适与时尚的装修风格。",
+      "shortDescription": "位于爱妮岛中心的时尚精品酒店，非常适合城市探险者。",
       "location": "El Nido Town Center, Palawan",
       "phone": "+63 917 567 8901",
       "website": "www.jboutiquehotel.com"
     },
     "sResortElNido": {
       "name": "S Resort El Nido",
-      "description": "为休闲和商务旅客提供舒适和便利的现代度假村。",
+      "description": "位于 El Nido 镇上，邻近 H Hotel，拥有 44 间房间，周围 200 公尺内有超过 100 家餐厅与酒吧，非常适合团体旅行或情侶度假。酒店的顶楼设有 H&C 中餐厅，而一楼的 Grounded 咖啡厅则为您提供美味的早晨咖啡。",
+      "shortDescription": "为休闲和商务旅客提供舒适和便利的现代度假村。",
       "location": "Corong Corong, El Nido, Palawan",
       "phone": "+63 917 678 9012",
       "website": "www.sresortelnido.com"
     },
     "casaCecilia": {
-      "name": "Casa Cecilia",
-      "description": "位于爱妮岛中心的三星级住宿，提供舒适和便利。",
+      "name": "C Hotel (Casa Cecilia)",
+      "description": "C Hotel 以当地风格简约装修，专为预算有限的旅客设计，提供优越的地理位置和简单舒适的住宿环境。酒店距离沙滩仅 2 分钟步行路程。",
+      "shortDescription": "位于爱妮岛中心的三星级住宿，提供舒适和便利。",
       "location": "El Nido, Palawan",
       "phone": "+63 917 345 6789",
       "website": "www.casacecilia.com"
     },
     "nacpanBeachVillas": {
       "name": "Nacpan Beach Villas",
-      "description": "提供免费WiFi的豪华别墅，非常适合寻求浪漫度假的情侣。",
+      "description": "这是 Nacpan Beach 上我们最新的酒店投资，采用单栋别墅设计，虽然没有健身房或游泳池，但其位于沙滩正上方，提供天然海洋游泳池。房间设计由知名设计师 Justin 操刀，提供旅客一个舒适、奢华的住宿体验。",
+      "shortDescription": "提供免费WiFi的豪华别墅，非常适合寻求浪漫度假的情侣。",
       "location": "Near Nacpan Beach, El Nido, Palawan",
       "highlights": "免费WiFi、花园、露台、酒吧"
     },
