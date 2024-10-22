@@ -353,16 +353,6 @@
       }
     }
   },
-  "restaurant": {
-    "3BrosFalafel": {
-      "name": "3 Bros Falafel",
-      "description": "A vibrant restaurant specializing in Mexican-style burritos, offering a unique fusion of flavors in El Nido."
-    },
-    "verDeElNido": {
-      "name": "Ver De El Nido",
-      "description": "A charming vegetarian restaurant offering a diverse plant-based menu in the heart of El Nido."
-    }
-  },
   "travel": {
     "elNidoGO": {
       "name": "El Nido GO",
