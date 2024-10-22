@@ -168,6 +168,7 @@
       "pieceLio": {
         "name": "Piece Lio",
         "description": "愛妮島最舒適的酒店之一，與日本知名的 Piece Group 合作開發。提供 50 到 150 平方米的寬敞客房，相比當地酒店典型的 18 到 22 平方米客房提供更舒適的住宿。",
+        "shortDescription": "與日本 Piece Group 合作的舒適酒店，提供寬敞客房。",
         "rooms": "客房數：36",
         "openingYear": "開業年份：2024",
         "location": "位置：Lio 機場區域（Ayala Lio）"
@@ -175,6 +176,7 @@
       "hHotelVeganHotel": {
         "name": "H Hotel - 素食友好酒店",
         "description": "位於愛妮島鎮中心，地理位置優越。提供 Ver De 的素食早餐和屋頂 Piece of Sky 餐廳的海景晚餐。TripAdvisor 排名前三的兩家餐廳都位於 H Hotel。",
+        "shortDescription": "位於鎮中心的素食友好酒店，擁有頂級餐廳。",
         "rooms": "客房數：41",
         "openingYear": "開業年份：2023",
         "location": "位置：愛妮島鎮中心"
@@ -182,6 +184,7 @@
       "nacpanBeachGlamping": {
         "name": "納克潘海灘豪華露營",
         "description": "位於納克潘海灘，是繼大小瀉湖後必訪之地。我們種植了 300 棵樹和 4000 株灌木，專注於環境保護並建立了海龜保護項目。",
+        "shortDescription": "納克潘海灘豪華露營，注重環境保護。",
         "rooms": "客房數：18",
         "openingYear": "開業年份：2023",
         "location": "位置：納克潘海灘"
@@ -189,6 +192,7 @@
       "nacpanBeachResort": {
         "name": "納克潘海灘度假村",
         "description": "為不喜歡住帳篷的旅客提供更舒適的海灘住宿體驗。客人可以享受私人浴室設施，避免帳篷中獨立廁所的不便。",
+        "shortDescription": "納克潘海灘舒適度假村，提供私人浴室設施。",
         "rooms": "客房數：26",
         "openingYear": "開業年份：2023",
         "location": "位置：納克潘海灘"
@@ -196,6 +200,7 @@
       "nacpanBeachVillas": {
         "name": "納克潘海灘別墅",
         "description": "我們在納克潘海灘的最新酒店投資，採用獨立別墅設計。雖然沒有健身房或游泳池，但位於海灘正上方，提供天然的海洋游泳池。由知名設計師 Justin 設計的房間提供舒適豪華的體驗。",
+        "shortDescription": "納克潘海灘豪華獨立別墅，靠近海灘。",
         "rooms": "客房數：14",
         "openingYear": "開業年份：2024",
         "location": "位置：納克潘海灘"
@@ -203,6 +208,7 @@
       "sResortElNido": {
         "name": "S Resort 愛妮島",
         "description": "位於愛妮島鎮，靠近 H Hotel，擁有 44 間客房。200 米範圍內有超過 100 家餐廳和酒吧，非常適合團體旅行或情侶度假。屋頂設有 H&C 中餐廳，一樓設有 Grounded 咖啡廳，提供美味的早晨咖啡。",
+        "shortDescription": "位於鎮中心的現代度假村，周邊餐飲豐富。",
         "rooms": "客房數：44",
         "openingYear": "開業年份：2023",
         "location": "位置：愛妮島鎮中心"
@@ -210,6 +216,7 @@
       "jBoutiqueHotel": {
         "name": "J 精品酒店",
         "description": "位於愛妮島鎮邊緣，步行 8 分鐘即可到達海灘。適合背包客和小型團體，提供實惠的價格，同時保持舒適時尚的裝飾。",
+        "shortDescription": "鎮邊緣的實惠精品酒店，靠近海灘。",
         "rooms": "客房數：14",
         "openingYear": "開業年份：2023",
         "location": "位置：愛妮島鎮中心"
@@ -217,6 +224,7 @@
       "cHotel": {
         "name": "C Hotel（Casa Cecilia）",
         "description": "以簡單的當地風格裝飾，為預算有限的旅客設計。提供優越的位置和簡單舒適的住宿。距離海灘僅 2 分鐘步行路程。",
+        "shortDescription": "簡約風格的經濟型酒店，靠近海灘。",
         "rooms": "客房數：20",
         "openingYear": "開業年份：2023",
         "location": "位置：愛妮島鎮中心"
@@ -224,6 +232,7 @@
       "zGardenHotel": {
         "name": "Z Garden Hotel",
         "description": "我們最新的酒店開發項目，計劃於 2025 年開業，位於愛妮島港口旁。酒店客房分為海景和花園景觀，為旅客提供多樣化的住宿選擇。",
+        "shortDescription": "即將開業的港口酒店，提供海景和花園景觀房。",
         "rooms": "客房數：30",
         "openingYear": "開業年份：2025",
         "location": "位置：愛妮島鎮中心"
@@ -234,6 +243,7 @@
       "pieceOfSky": {
         "name": "Piece of Sky",
         "description": "一家屋頂餐廳，提供令人驚嘆的海景和亞洲與西方融合料理。非常適合浪漫晚餐或欣賞日落時品嚐雞尾酒。",
+        "shortDescription": "屋頂餐廳，融合料理，海景和日落。",
         "seats": "座位數：65",
         "openingYear": "開業年份：2023",
         "location": "位置：H Hotel 屋頂，愛妮島鎮中心"
@@ -241,6 +251,7 @@
       "hAndC": {
         "name": "H&C",
         "description": "正宗的中國料理餐廳，專門提供粵菜和川菜。深受中國遊客和當地人喜愛。",
+        "shortDescription": "正宗中國料理，粵菜和川菜。",
         "seats": "座位數：50",
         "openingYear": "開業年份：2023",
         "location": "位置：S Resort 屋頂，愛妮島鎮中心"
@@ -248,6 +259,7 @@
       "threeBrosFalafel": {
         "name": "3 Bros Falafel",
         "description": "受中東啟發的餐廳，以美味的沙威瑪和炸豆丸聞名。快速美味餐點的熱門地點。",
+        "shortDescription": "中東風味，沙威瑪和炸豆丸。",
         "seats": "座位數：30",
         "openingYear": "開業年份：2023",
         "location": "位置：愛妮島鎮中心"
@@ -255,6 +267,7 @@
       "groundedCoffee": {
         "name": "Grounded Coffee",
         "description": "專業咖啡店，提供高品質、可持續採購的咖啡。咖啡愛好者和數位遊牧族的完美去處。",
+        "shortDescription": "高品質咖啡，適合咖啡愛好者。",
         "seats": "座位數：18",
         "openingYear": "開業年份：2023",
         "location": "位置：愛妮島鎮中心"
@@ -262,6 +275,7 @@
       "janeCoffee": {
         "name": "Jane Coffee",
         "description": "H Hospitality Group 最新投資，專注於高端手沖咖啡體驗。專業咖啡師為品味獨特的咖啡愛好者提供 1-2 小時的精緻咖啡體驗。",
+        "shortDescription": "高端手沖咖啡，精緻體驗。",
         "seats": "座位數：15",
         "openingYear": "開業年份：2025",
         "location": "位置：愛妮島鎮中心"
@@ -269,6 +283,7 @@
       "lechonCo": {
         "name": "Lechon Co by H Hospitality Group",
         "description": "與宿霧的烹飪大師合作，提供著名的烤乳豬。必嚐的傳統菲律賓菜餚，位於 H Hotel 對面。",
+        "shortDescription": "著名烤乳豬，傳統菲律賓菜。",
         "seats": "座位數：8",
         "openingYear": "開業年份：2025",
         "location": "位置：愛妮島鎮中心"
@@ -276,6 +291,7 @@
       "verDeElNido": {
         "name": "Ver De El Nido",
         "description": "愛妮島首家全素食餐廳，由美國和菲律賓知名廚師共同創立。特色包括 6 米高的玻璃窗、空調和 Beyond Meat 產品。在 TripAdvisor 排名前三。",
+        "shortDescription": "全素食餐廳，高級環境。",
         "seats": "座位數：65",
         "openingYear": "開業年份：2025",
         "location": "位置：愛妮島鎮中心"
@@ -283,6 +299,7 @@
       "sunmaiNacpanBeach": {
         "name": "金色三麥",
         "description": "一家台灣精釀啤酒吧，提供多種獨特的啤酒。適合想要探索新口味的啤酒愛好者。",
+        "shortDescription": "台灣精釀啤酒吧，多種口味。",
         "seats": "座位數：40",
         "openingYear": "開業年份：2024",
         "location": "位置：愛妮島鎮中心"
@@ -290,6 +307,7 @@
       "hAndCChinese": {
         "name": "H&C 中餐廳",
         "description": "一家正宗的中國餐廳，專門提供來自中國各地的傳統菜餚。深受當地人和遊客歡迎。",
+        "shortDescription": "正宗中國菜，各地傳統菜餚。",
         "seats": "座位數：60",
         "openingYear": "開業年份：2024",
         "location": "位置：愛妮島鎮中心"
@@ -297,6 +315,7 @@
       "unocha": {
         "name": "Unocha",
         "description": "一家受日本啟發的茶館，提供寧靜的氛圍和各種高品質茶飲和輕食。",
+        "shortDescription": "日式茶館，高品質茶飲。",
         "seats": "座位數：25",
         "openingYear": "開業年份：2024",
         "location": "位置：愛妮島鎮中心"
@@ -304,6 +323,7 @@
       "3BrosFalafel": {
         "name": "3 Bros Falafel",
         "description": "一家充滿活力的餐廳，專門提供墨西哥風格的捲餅，在愛妮島提供獨特的風味融合。",
+        "shortDescription": "墨西哥風格捲餅，獨特風味。",
         "seats": "座位數：35",
         "openingYear": "開業年份：2023",
         "location": "位置：愛妮島鎮中心"

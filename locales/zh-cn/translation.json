@@ -168,6 +168,7 @@
       "pieceLio": {
         "name": "Piece Lio",
         "description": "爱妮岛最舒适的酒店之一，与日本知名的 Piece Group 合作开发。提供 50 到 150 平方米的宽敞客房，相比当地酒店典型的 18 到 22 平方米客房提供更舒适的住宿。",
+        "shortDescription": "与日本 Piece Group 合作的舒适酒店，提供宽敞客房。",
         "rooms": "客房数：36",
         "openingYear": "开业年份：2024",
         "location": "位置：Lio 机场区域（Ayala Lio）"
@@ -175,6 +176,7 @@
       "hHotelVeganHotel": {
         "name": "H Hotel - 素食友好酒店",
         "description": "位于爱妮岛镇中心，地理位置优越。提供 Ver De 的素食早餐和屋顶 Piece of Sky 餐厅的海景晚餐。TripAdvisor 排名前三的两家餐厅都位于 H Hotel。",
+        "shortDescription": "位于镇中心的素食友好酒店，拥有顶级餐厅。",
         "rooms": "客房数：41",
         "openingYear": "开业年份：2023",
         "location": "位置：爱妮岛镇中心"
@@ -182,6 +184,7 @@
       "nacpanBeachGlamping": {
         "name": "纳克潘海滩豪华露营",
         "description": "位于纳克潘海滩，是继大小泻湖后必访之地。我们种植了 300 棵树和 4000 株灌木，专注于环境保护并建立了海龟保护项目。",
+        "shortDescription": "纳克潘海滩豪华露营，注重环境保护。",
         "rooms": "客房数：18",
         "openingYear": "开业年份：2023",
         "location": "位置：纳克潘海滩"
@@ -189,6 +192,7 @@
       "nacpanBeachResort": {
         "name": "纳克潘海滩度假村",
         "description": "为不喜欢住帐篷的旅客提供更舒适的海滩住宿体验。客人可以享受私人浴室设施，避免帐篷中独立厕所的不便。",
+        "shortDescription": "纳克潘海滩舒适度假村，提供私人浴室。",
         "rooms": "客房数：26",
         "openingYear": "开业年份：2023",
         "location": "位置：纳克潘海滩"
@@ -196,6 +200,7 @@
       "nacpanBeachVillas": {
         "name": "纳克潘海滩别墅",
         "description": "我们在纳克潘海滩的最新酒店投资，采用独立别墅设计。虽然没有健身房或游泳池，但位于海滩正上方，提供天然的海洋游泳池。由知名设计师 Justin 设计的房间提供舒适豪华的体验。",
+        "shortDescription": "纳克潘海滩独立别墅，靠近海滩，设计豪华。",
         "rooms": "客房数：14",
         "openingYear": "开业年份：2024",
         "location": "位置：纳克潘海滩"
@@ -203,6 +208,7 @@
       "sResortElNido": {
         "name": "S Resort 爱妮岛",
         "description": "位于爱妮岛镇，靠近 H Hotel，拥有 44 间客房。200 米范围内有超过 100 家餐厅和酒吧，非常适合团体旅行或情侣度假。屋顶设有 H&C 中餐厅，一楼设有 Grounded 咖啡厅，提供美味的早晨咖啡。",
+        "shortDescription": "位于镇中心的度假村，周边餐饮丰富，适合各类旅客。",
         "rooms": "客房数：44",
         "openingYear": "开业年份：2023",
         "location": "位置：爱妮岛镇中心"
@@ -210,6 +216,7 @@
       "jBoutiqueHotel": {
         "name": "J 精品酒店",
         "description": "位于爱妮岛镇边缘，步行 8 分钟即可到达海滩。适合背包客和小型团体，提供实惠的价格，同时保持舒适时尚的装饰。",
+        "shortDescription": "实惠的精品酒店，靠近海滩，适合背包客。",
         "rooms": "客房数：14",
         "openingYear": "开业年份：2023",
         "location": "位置：爱妮岛镇中心"
@@ -217,6 +224,7 @@
       "cHotel": {
         "name": "C Hotel（Casa Cecilia）",
         "description": "以简单的当地风格装饰，为预算有限的旅客设计。提供优越的位置和简单舒适的住宿。距离海滩仅 2 分钟步行路程。",
+        "shortDescription": "简单舒适的经济型酒店，靠近海滩。",
         "rooms": "客房数：20",
         "openingYear": "开业年份：2023",
         "location": "位置：爱妮岛镇中心"
@@ -224,6 +232,7 @@
       "zGardenHotel": {
         "name": "Z Garden Hotel",
         "description": "我们最新的酒店开发项目，计划于 2025 年开业，位于爱妮岛港口旁。酒店客房分为海景和花园景观，为旅客提供多样化的住宿选择。",
+        "shortDescription": "即将开业的新酒店，提供海景和花园景观客房。",
         "rooms": "客房数：30",
         "openingYear": "开业年份：2025",
         "location": "位置：爱妮岛镇中心"
@@ -234,6 +243,7 @@
       "pieceOfSky": {
         "name": "Piece of Sky",
         "description": "一家屋顶餐厅，提供令人惊叹的海景和亚洲与西方融合料理。非常适合浪漫晚餐或欣赏日落时品尝鸡尾酒。",
+        "shortDescription": "屋顶餐厅，海景融合料理，适合浪漫晚餐。",
         "seats": "座位数：65",
         "openingYear": "开业年份：2023",
         "location": "位置：H Hotel 屋顶，爱妮岛镇中心"
@@ -241,6 +251,7 @@
       "hAndC": {
         "name": "H&C",
         "description": "正宗的中国料理餐厅，专门提供粤菜和川菜。深受中国游客和当地人喜爱。",
+        "shortDescription": "正宗中国料理，粤菜川菜，受欢迎。",
         "seats": "座位数：50",
         "openingYear": "开业年份：2023",
         "location": "位置：S Resort 屋顶，爱妮岛镇中心"
@@ -248,6 +259,7 @@
       "threeBrosFalafel": {
         "name": "3 Bros Falafel",
         "description": "受中东启发的餐厅，以美味的沙威玛和炸豆丸闻名。快速美味餐点的热门地点。",
+        "shortDescription": "中东风味，沙威玛炸豆丸，快餐热门。",
         "seats": "座位数：30",
         "openingYear": "开业年份：2023",
         "location": "位置：爱妮岛镇中心"
@@ -255,6 +267,7 @@
       "groundedCoffee": {
         "name": "Grounded Coffee",
         "description": "专业咖啡店，提供高品质、可持续采购的咖啡。咖啡爱好者和数字游牧族的完美去处。",
+        "shortDescription": "专业咖啡，高品质可持续，适合咖啡爱好者。",
         "seats": "座位数：18",
         "openingYear": "开业年份：2023",
         "location": "位置：爱妮岛镇中心"
@@ -262,6 +275,7 @@
       "janeCoffee": {
         "name": "Jane Coffee",
         "description": "H Hospitality Group 最新投资，专注于高端手冲咖啡体验。专业咖啡师为品味独特的咖啡爱好者提供 1-2 小时的精致咖啡体验。",
+        "shortDescription": "高端手冲咖啡，专业体验，1-2小时精致服务。",
         "seats": "座位数：15",
         "openingYear": "开业年份：2025",
         "location": "位置：爱妮岛镇中心"
@@ -269,6 +283,7 @@
       "lechonCo": {
         "name": "Lechon Co by H Hospitality Group",
         "description": "与宿雾的烹饪大师合作，提供著名的烤乳猪。必尝的传统菲律宾菜肴，位于 H Hotel 对面。",
+        "shortDescription": "宿雾烤乳猪，传统菲律宾美食。",
         "seats": "座位数：8",
         "openingYear": "开业年份：2025",
         "location": "位置：爱妮岛镇中心"
@@ -276,6 +291,7 @@
       "verDeElNido": {
         "name": "Ver De El Nido",
         "description": "爱妮岛首家全素食餐厅，由美国和菲律宾知名厨师共同创立。特色包括 6 米高的玻璃窗、空调和 Beyond Meat 产品。在 TripAdvisor 排名前三。",
+        "shortDescription": "全素食餐厅，知名厨师创立，TripAdvisor前三。",
         "seats": "座位数：65",
         "openingYear": "开业年份：2025",
         "location": "位置：爱妮岛镇中心"
@@ -283,6 +299,7 @@
       "sunmaiNacpanBeach": {
         "name": "金色三麦",
         "description": "一家台湾精酿啤酒吧，提供多种独特的啤酒。适合想要探索新口味的啤酒爱好者。",
+        "shortDescription": "台湾精酿啤酒吧，多种独特啤酒。",
         "seats": "座位数：40",
         "openingYear": "开业年份：2024",
         "location": "位置：爱妮岛镇中心"
@@ -290,6 +307,7 @@
       "hAndCChinese": {
         "name": "H&C 中餐厅",
         "description": "一家正宗的中国餐厅，专门提供来自中国各地的传统菜肴。深受当地人和游客欢迎。",
+        "shortDescription": "正宗中国餐厅，传统菜肴，受欢迎。",
         "seats": "座位数：60",
         "openingYear": "开业年份：2024",
         "location": "位置：爱妮岛镇中心"
@@ -297,6 +315,7 @@
       "unocha": {
         "name": "Unocha",
         "description": "一家受日本启发的茶馆，提供宁静的氛围和各种高品质茶饮和轻食。",
+        "shortDescription": "日式茶馆，宁静氛围，高品质茶饮。",
         "seats": "座位数：25",
         "openingYear": "开业年份：2024",
         "location": "位置：爱妮岛镇中心"
@@ -304,6 +323,7 @@
       "3BrosFalafel": {
         "name": "3 Bros Falafel",
         "description": "一家充满活力的餐厅，专门提供墨西哥风格的卷饼，在爱妮岛提供独特的风味融合。",
+        "shortDescription": "墨西哥风格卷饼，独特风味融合。",
         "seats": "座位数：35",
         "openingYear": "开业年份：2023",
         "location": "位置：爱妮岛镇中心"

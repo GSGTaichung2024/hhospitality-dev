@@ -13333,12 +13333,21 @@ body {
 
 .hotel-description{
   display: inline-block;
-  height: 80px;
+  height: 60px;
 }
 
 .restaurant-description{
   display: inline-block;
-  height: 100px;
+  height: 60px;
+}
+
+#restaurants-cafe-bars .featured-text, #hotels .featured-text{
+  height: 200px;
+}
+
+.tour-description{
+  display: inline-block;
+  height: 150px;
 }
 
 #investmentTabs{

@@ -244,6 +244,7 @@
       "pieceOfSky": {
         "name": "Piece of Sky",
         "description": "A rooftop restaurant offering breathtaking sea views and a fusion of Asian and Western cuisines. Perfect for romantic dinners or sunset cocktails.",
+        "shortDescription": "Rooftop fusion restaurant with sea views.",
         "seats": "Seats: 65",
         "openingYear": "Opening Year: 2023",
         "location": "Location: H Hotel Rooftop, El Nido Town Center"
@@ -251,6 +252,7 @@
       "hAndC": {
         "name": "H&C",
         "description": "Authentic Chinese cuisine restaurant specializing in Cantonese and Sichuan dishes. Popular among Chinese tourists and locals alike.",
+        "shortDescription": "Authentic Chinese restaurant popular with tourists and locals.",
         "seats": "Seats: 50",
         "openingYear": "Opening Year: 2023",
         "location": "Location: S Resort Rooftop, El Nido Town Center"
@@ -258,6 +260,7 @@
       "threeBrosFalafel": {
         "name": "3 Bros Falafel",
         "description": "Middle Eastern-inspired restaurant known for its delicious falafel and shawarma. A favorite spot for quick, flavorful meals.",
+        "shortDescription": "Middle Eastern fast food spot known for falafel and shawarma.",
         "seats": "Seats: 30",
         "openingYear": "Opening Year: 2023",
         "location": "Location: El Nido Town Center"
@@ -265,6 +268,7 @@
       "groundedCoffee": {
         "name": "Grounded Coffee",
         "description": "Specialty coffee shop serving high-quality, sustainably sourced coffee. A perfect spot for coffee enthusiasts and digital nomads.",
+        "shortDescription": "Specialty coffee shop with sustainable sourcing.",
         "seats": "Seats: 18",
         "openingYear": "Opening Year: 2023",
         "location": "Location: El Nido Town Center"
@@ -272,6 +276,7 @@
       "janeCoffee": {
         "name": "Jane Coffee",
         "description": "H Hospitality Group's latest investment, focusing on high-end hand-drip coffee experiences. Professional baristas offer 1-2 hour refined coffee experiences for discerning coffee enthusiasts.",
+        "shortDescription": "High-end hand-drip coffee experience with professional baristas.",
         "seats": "Seats: 15",
         "openingYear": "Opening Year: 2025",
         "location": "Location: El Nido Town Center"
@@ -279,6 +284,7 @@
       "lechonCo": {
         "name": "Lechon Co by H Hospitality Group",
         "description": "Collaboration with a culinary master from Cebu, offering the famous Lechon roast pig. A must-try traditional Filipino dish, located opposite H Hotel.",
+        "shortDescription": "Famous Cebu-style Lechon roast pig restaurant.",
         "seats": "Seats: 8",
         "openingYear": "Opening Year: 2025",
         "location": "Location: El Nido Town Center"
@@ -286,6 +292,7 @@
       "verDeElNido": {
         "name": "Ver De El Nido",
         "description": "El Nido's first all-vegan restaurant, co-founded by renowned chefs from the US and Philippines. Features 6-meter high glass windows, air conditioning, and Beyond Meat products. Ranked in TripAdvisor's top 3.",
+        "shortDescription": "Top-ranked all-vegan restaurant with international chef collaboration.",
         "seats": "Seats: 65",
         "openingYear": "Opening Year: 2025",
         "location": "Location: El Nido Town Center"
@@ -293,6 +300,7 @@
       "sunmaiNacpanBeach": {
         "name": "Sunmai",
         "description": "A Taiwanese craft beer bar offering a wide selection of unique brews. Perfect for beer enthusiasts looking to explore new flavors.",
+        "shortDescription": "Taiwanese craft beer bar with unique brews.",
         "seats": "Seats: 40",
         "openingYear": "Opening Year: 2024",
         "location": "Location: El Nido Town Center"
@@ -300,6 +308,7 @@
       "hAndCChinese": {
         "name": "H&C Chinese",
         "description": "An authentic Chinese restaurant specializing in traditional dishes from various regions of China. Popular among both locals and tourists.",
+        "shortDescription": "Authentic multi-regional Chinese restaurant.",
         "seats": "Seats: 60",
         "openingYear": "Opening Year: 2024",
         "location": "Location: El Nido Town Center"
@@ -307,6 +316,7 @@
       "unocha": {
         "name": "Unocha",
         "description": "A Japanese-inspired tea house offering a serene atmosphere and a wide variety of high-quality teas and light snacks.",
+        "shortDescription": "Japanese-inspired tea house with serene atmosphere.",
         "seats": "Seats: 25",
         "openingYear": "Opening Year: 2024",
         "location": "Location: El Nido Town Center"
@@ -314,6 +324,7 @@
       "3BrosFalafel": {
         "name": "3 Bros Falafel",
         "description": "A vibrant restaurant specializing in Mexican-style burritos, offering a unique fusion of flavors in El Nido.",
+        "shortDescription": "Vibrant Mexican-style burrito restaurant.",
         "seats": "Seats: 35",
         "openingYear": "Opening Year: 2023",
         "location": "Location: El Nido Town Center"
